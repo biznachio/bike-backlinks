@@ -1,0 +1,22 @@
+{
+  "name": "bike-backlinks",
+  "version": "0.4.4",
+  "description": "Backlinks inspector for Bike 2",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "bike-ext build",
+    "install-ext": "bike-ext build --install",
+    "test": "bike-ext test"
+  },
+  "devDependencies": {
+    "@bike-outliner/extension-kit": "github:bike-outliner/extension-kit",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/biznachio/bike-backlinks.git"
+  },
+  "homepage": "https://github.com/biznachio/bike-backlinks"
+}

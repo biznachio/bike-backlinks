@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+<head>
+<meta charset="utf-8"/>
+</head>
+<body>
+<ul id="SampleBacklinks01" data-created="2026-08-01T14:00:00Z" data-modified="2026-10-16T20:00:00Z">
+<li id="r030" data-type="heading" data-created="2026-08-01T14:00:00Z" data-modified="2026-08-01T14:00:00Z">
+<p>Calendar</p>
+<ul>
+<li id="2026/00/00" data-created="2026-08-01T14:00:00Z" data-modified="2026-08-01T14:00:00Z">
+<p>2026</p>
+<ul>
+<li id="2026/08/00" data-created="2026-08-01T14:00:00Z" data-modified="2026-08-01T14:00:00Z">
+<p>August 2026</p>
+<ul>
+<li id="2026/08/06" data-created="2026-08-06T14:00:00Z" data-modified="2026-08-06T14:00:00Z">
+<p>August 6, 2026</p>
+<ul>
+<li id="r003" data-created="2026-08-06T15:00:00Z" data-modified="2026-08-06T15:00:00Z">
+<p><a href="bike://SampleBacklinks01/#maya">Maya Okafor</a> 1-on-1</p>
+<ul>
+<li id="r001" data-created="2026-08-06T15:00:00Z" data-modified="2026-08-06T15:00:00Z">
+<p>Wants to own the relaunch content plan</p>
+</li>
+<li id="r002" data-created="2026-08-06T15:00:00Z" data-modified="2026-08-06T15:00:00Z">
+<p>Asked about training budget for Q4</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="2026/08/20" data-created="2026-08-20T14:00:00Z" data-modified="2026-08-20T14:00:00Z">
+<p>August 20, 2026</p>
+<ul>
+<li id="r006" data-created="2026-08-20T16:00:00Z" data-modified="2026-08-20T16:00:00Z">
+<p>Kickoff for the <a href="bike://SampleBacklinks01/#launch">website relaunch</a></p>
+<ul>
+<li id="r004" data-created="2026-08-20T16:00:00Z" data-modified="2026-08-20T16:00:00Z">
+<p>Scope: homepage, about, three product pages</p>
+</li>
+<li id="r005" data-created="2026-08-20T16:00:00Z" data-modified="2026-08-20T16:00:00Z">
+<p>Content owner: &lt;a href="bike://SampleBacklinks01/#maya"&gt;Maya Okafor&lt;/a&gt;</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="2026/09/00" data-created="2026-09-01T14:00:00Z" data-modified="2026-09-01T14:00:00Z">
+<p>September 2026</p>
+<ul>
+<li id="2026/09/03" data-created="2026-09-03T14:00:00Z" data-modified="2026-09-03T14:00:00Z">
+<p>September 3, 2026</p>
+<ul>
+<li id="r009" data-created="2026-09-03T15:00:00Z" data-modified="2026-09-03T15:00:00Z">
+<p><a href="bike://SampleBacklinks01/#theo">Theo Lindqvist</a> 1-on-1</p>
+<ul>
+<li id="r007" data-created="2026-09-03T15:00:00Z" data-modified="2026-09-03T15:00:00Z">
+<p>Design system tokens are nearly done</p>
+</li>
+<li id="r008" data-created="2026-09-03T15:00:00Z" data-modified="2026-09-03T15:00:00Z">
+<p>Needs a decision on the photo style</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="2026/09/17" data-created="2026-09-17T14:00:00Z" data-modified="2026-09-17T14:00:00Z">
+<p>September 17, 2026</p>
+<ul>
+<li id="r012" data-created="2026-09-17T15:00:00Z" data-modified="2026-09-17T15:00:00Z">
+<p><a href="bike://SampleBacklinks01/#maya">Maya Okafor</a> 1-on-1</p>
+<ul>
+<li id="r010" data-created="2026-09-17T15:00:00Z" data-modified="2026-09-17T15:00:00Z">
+<p>Relaunch copy drafts are in review</p>
+</li>
+<li id="r011" data-created="2026-09-17T15:00:00Z" data-modified="2026-09-17T15:00:00Z">
+<p>Feeling stretched; pausing the newsletter for two weeks</p>
+</li>
+</ul>
+</li>
+<li id="r015" data-created="2026-09-17T19:00:00Z" data-modified="2026-09-17T19:00:00Z">
+<p><a href="bike://SampleBacklinks01/#survey">Reader survey</a> results came in</p>
+<ul>
+<li id="r013" data-created="2026-09-17T19:00:00Z" data-modified="2026-09-17T19:00:00Z">
+<p>412 responses, up from 280 last year</p>
+</li>
+<li id="r014" data-created="2026-09-17T19:00:00Z" data-modified="2026-09-17T19:00:00Z">
+<p>Top request: shorter product pages</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="2026/09/29" data-created="2026-09-29T14:00:00Z" data-modified="2026-09-29T14:00:00Z">
+<p>September 29, 2026</p>
+<ul>
+<li id="r016" data-created="2026-09-29T17:00:00Z" data-modified="2026-09-29T17:00:00Z">
+<p>Ask <a href="bike://SampleBacklinks01/#priya">Priya Raman</a> and <a href="bike://SampleBacklinks01/#sam">Sam Delgado</a> to review the <a href="bike://SampleBacklinks01/#catalog">spring catalog</a> budget</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="2026/10/00" data-created="2026-10-01T14:00:00Z" data-modified="2026-10-01T14:00:00Z">
+<p>October 2026</p>
+<ul>
+<li id="2026/10/01" data-created="2026-10-01T14:00:00Z" data-modified="2026-10-01T14:00:00Z">
+<p>October 1, 2026</p>
+<ul>
+<li id="r020" data-created="2026-10-01T15:00:00Z" data-modified="2026-10-01T15:00:00Z">
+<p><a href="bike://SampleBacklinks01/#maya">Maya Okafor</a> 1-on-1</p>
+<ul>
+<li id="r017" data-created="2026-10-01T15:00:00Z" data-modified="2026-10-01T15:00:00Z">
+<p>Homepage copy approved</p>
+</li>
+<li id="r018" data-created="2026-10-01T15:00:00Z" data-modified="2026-10-01T15:00:00Z">
+<p>Wants to pair with Theo on the about page</p>
+</li>
+<li id="r019" data-created="2026-10-01T15:00:00Z" data-modified="2026-10-01T15:00:00Z">
+<p>Interested in leading the next survey</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="2026/10/08" data-created="2026-10-08T14:00:00Z" data-modified="2026-10-08T14:00:00Z">
+<p>October 8, 2026</p>
+<ul>
+<li id="r023" data-created="2026-10-08T18:00:00Z" data-modified="2026-10-08T18:00:00Z">
+<p>Design review with <a href="bike://SampleBacklinks01/#theo">Theo Lindqvist</a> and <a href="bike://SampleBacklinks01/#maya">Maya Okafor</a></p>
+<ul>
+<li id="r021" data-created="2026-10-08T18:00:00Z" data-modified="2026-10-08T18:00:00Z">
+<p>Photo style: natural light, no studio backdrops</p>
+</li>
+<li id="r022" data-created="2026-10-08T18:00:00Z" data-modified="2026-10-08T18:00:00Z">
+<p>Applies to the &lt;a href="bike://SampleBacklinks01/#catalog"&gt;spring catalog&lt;/a&gt; too</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="2026/10/14" data-created="2026-10-14T14:00:00Z" data-modified="2026-10-14T14:00:00Z">
+<p>October 14, 2026</p>
+<ul>
+<li id="r025" data-created="2026-10-14T15:00:00Z" data-modified="2026-10-14T15:00:00Z">
+<p><a href="bike://SampleBacklinks01/#iris">Iris Novak</a> joined the team today</p>
+<ul>
+<li id="r024" data-created="2026-10-14T15:00:00Z" data-modified="2026-10-14T15:00:00Z">
+<p>Starts on the catalog production schedule</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="2026/10/16" data-created="2026-10-16T14:00:00Z" data-modified="2026-10-16T14:00:00Z">
+<p>October 16, 2026</p>
+<ul>
+<li id="r028" data-created="2026-10-16T16:00:00Z" data-modified="2026-10-16T16:00:00Z">
+<p>Quick sync with <a href="bike://SampleBacklinks01/#maya">Maya Okafor</a> on <a href="bike://SampleBacklinks01/#launch">relaunch</a> timing</p>
+<ul>
+<li id="r026" data-created="2026-10-16T16:00:00Z" data-modified="2026-10-16T16:00:00Z">
+<p>Soft launch moves to Nov. 3</p>
+</li>
+<li id="r027" data-created="2026-10-16T16:00:00Z" data-modified="2026-10-16T16:00:00Z">
+<p>She will brief the support team</p>
+</li>
+</ul>
+</li>
+<li id="r029" data-created="2026-10-16T20:00:00Z" data-modified="2026-10-16T20:00:00Z">
+<p><a href="bike://SampleBacklinks01/#priya">Priya Raman</a> sent the final catalog budget</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="r038" data-type="heading" data-created="2026-08-01T14:00:00Z" data-modified="2026-08-01T14:00:00Z">
+<p>People</p>
+<ul>
+<li id="maya" data-created="2026-08-01T14:00:00Z" data-modified="2026-08-01T14:00:00Z">
+<p>Maya Okafor</p>
+<ul>
+<li id="r031" data-created="2026-08-01T14:00:00Z" data-modified="2026-08-01T14:00:00Z">
+<p>Content lead</p>
+</li>
+</ul>
+</li>
+<li id="theo" data-created="2026-08-01T14:00:00Z" data-modified="2026-08-01T14:00:00Z">
+<p>Theo Lindqvist</p>
+<ul>
+<li id="r032" data-created="2026-08-01T14:00:00Z" data-modified="2026-08-01T14:00:00Z">
+<p>Design</p>
+</li>
+</ul>
+</li>
+<li id="priya" data-created="2026-08-01T14:00:00Z" data-modified="2026-08-01T14:00:00Z">
+<p>Priya Raman</p>
+<ul>
+<li id="r033" data-created="2026-08-01T14:00:00Z" data-modified="2026-08-01T14:00:00Z">
+<p>Finance partner</p>
+</li>
+</ul>
+</li>
+<li id="sam" data-created="2026-08-01T14:00:00Z" data-modified="2026-08-01T14:00:00Z">
+<p>Sam Delgado</p>
+<ul>
+<li id="r034" data-created="2026-08-01T14:00:00Z" data-modified="2026-08-01T14:00:00Z">
+<p>Operations</p>
+</li>
+</ul>
+</li>
+<li id="iris" data-created="2026-10-14T14:00:00Z" data-modified="2026-10-14T14:00:00Z">
+<p>Iris Novak</p>
+<ul>
+<li id="r035" data-created="2026-10-14T14:00:00Z" data-modified="2026-10-14T14:00:00Z">
+<p>Production coordinator</p>
+</li>
+</ul>
+</li>
+<li id="r037" data-created="2026-08-01T14:00:00Z" data-modified="2026-08-01T14:00:00Z">
+<p>Jordan Reyes</p>
+<ul>
+<li id="r036" data-created="2026-08-01T14:00:00Z" data-modified="2026-08-01T14:00:00Z">
+<p>Support lead</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="r047" data-type="heading" data-created="2026-08-01T14:00:00Z" data-modified="2026-08-01T14:00:00Z">
+<p>Projects</p>
+<ul>
+<li id="launch" data-created="2026-08-20T16:00:00Z" data-modified="2026-08-20T16:00:00Z" data-status="started">
+<p>Website relaunch</p>
+<ul>
+<li id="r040" data-created="2026-08-21T15:00:00Z" data-modified="2026-08-21T15:00:00Z">
+<p>Content plan, owned by <a href="bike://SampleBacklinks01/#maya">Maya Okafor</a></p>
+<ul>
+<li id="r039" data-created="2026-08-21T15:00:00Z" data-modified="2026-08-21T15:00:00Z">
+<p>Homepage, about, three product pages</p>
+</li>
+</ul>
+</li>
+<li id="r041" data-created="2026-08-22T15:00:00Z" data-modified="2026-08-22T15:00:00Z">
+<p>Visual design with <a href="bike://SampleBacklinks01/#theo">Theo Lindqvist</a></p>
+</li>
+<li id="r042" data-created="2026-10-16T16:30:00Z" data-modified="2026-10-16T16:30:00Z">
+<p>Soft launch Nov. 3</p>
+</li>
+</ul>
+</li>
+<li id="catalog" data-created="2026-09-10T15:00:00Z" data-modified="2026-09-10T15:00:00Z" data-status="started">
+<p>Spring catalog</p>
+<ul>
+<li id="r043" data-created="2026-09-29T17:30:00Z" data-modified="2026-09-29T17:30:00Z">
+<p>Budget from <a href="bike://SampleBacklinks01/#priya">Priya Raman</a></p>
+</li>
+<li id="r044" data-created="2026-10-14T15:30:00Z" data-modified="2026-10-14T15:30:00Z">
+<p>Production schedule: <a href="bike://SampleBacklinks01/#iris">Iris Novak</a></p>
+</li>
+</ul>
+</li>
+<li id="survey" data-created="2026-07-30T15:00:00Z" data-modified="2026-07-30T15:00:00Z" data-status="done">
+<p>Reader survey</p>
+<ul>
+<li id="r046" data-created="2026-09-18T15:00:00Z" data-modified="2026-09-18T15:00:00Z">
+<p>Summary for the team</p>
+<ul>
+<li id="r045" data-created="2026-09-18T15:00:00Z" data-modified="2026-09-18T15:00:00Z">
+<p>Shorter product pages ranked first</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</body>
+</html>

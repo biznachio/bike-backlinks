@@ -1,0 +1,517 @@
+/*
+ * Backlinks inspector. Everything is prefixed bl- because inspector items can share a page.
+ *
+ * One small system, used everywhere:
+ *   Header   name, one summary line, activity strip
+ *   Section  a header (title + count, optional action), then rows
+ *   Row      title line, meta line, optional pill or hover actions
+ *   Pill     the outline badge: arrow + backlink count
+ *   Bar      on Linked inside rows, each row's share of the busiest one
+ * Spacing steps: 4, 8, 12, 24. Blue marks backlink activity; yellow marks the link inside a note.
+ */
+
+.bl-root {
+  --bl-blue: var(--system-blue);
+  --bl-gray: var(--system-gray);
+  --bl-accent: var(--control-accent, var(--system-blue));
+  --bl-hover: color-mix(in srgb, var(--label) 6%, transparent);
+  --bl-hover-solid: color-mix(in srgb, var(--label) 6%, var(--background));
+  --bl-fill: color-mix(in srgb, var(--label) 7%, transparent);
+  --bl-mark: color-mix(in srgb, var(--system-yellow) 42%, transparent);
+  --bl-line: var(--separator);
+  color: var(--label);
+  -webkit-user-select: none;
+  user-select: none;
+  position: relative;
+}
+
+.bl-body {
+  padding: 0 2px 24px;
+}
+
+.bl-root button {
+  font: inherit;
+  color: inherit;
+}
+
+/* Text roles: title, meta, quiet link. */
+
+.bl-t {
+  color: var(--label);
+}
+
+.bl-m {
+  display: block;
+  color: var(--secondary-label);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bl-link {
+  all: unset;
+  color: var(--bl-accent);
+  border-radius: 4px;
+}
+
+.bl-link:hover {
+  text-decoration: underline;
+}
+
+/* Back */
+
+.bl-nav {
+  display: flex;
+  margin: 4px 0 12px;
+}
+
+.bl-back {
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  max-width: 100%;
+  height: 22px;
+  padding: 0 9px 0 6px;
+  border-radius: 6px;
+  background: var(--bl-fill);
+  color: var(--secondary-label);
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.bl-back > span:first-child {
+  flex: none;
+  color: var(--tertiary-label);
+}
+
+.bl-back > span:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bl-back:hover {
+  background: var(--bl-hover);
+  color: var(--label);
+}
+
+/* Header */
+
+.bl-head {
+  margin: 4px 0 24px;
+}
+
+.bl-who {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  overflow-wrap: anywhere;
+  margin-bottom: 4px;
+}
+
+.bl-summary {
+  color: var(--secondary-label);
+  margin: 0;
+}
+
+.bl-strip {
+  margin-top: 12px;
+}
+
+.bl-rhythm {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+.bl-cell {
+  display: block;
+  height: 10px;
+  border-radius: 3px;
+  background: var(--bl-fill);
+}
+
+.bl-on1 {
+  background: color-mix(in srgb, var(--bl-blue) 40%, var(--bl-fill));
+}
+
+.bl-on2 {
+  background: color-mix(in srgb, var(--bl-blue) 70%, var(--bl-fill));
+}
+
+.bl-on3 {
+  background: var(--bl-blue);
+}
+
+.bl-rlabels {
+  display: flex;
+  justify-content: space-between;
+  color: var(--tertiary-label);
+}
+
+/* The start label cycles: weeks ago, months ago, date. */
+.bl-start {
+  all: unset;
+  border-radius: 4px;
+  padding: 0 3px;
+  margin: 0 -3px;
+}
+
+.bl-start:hover {
+  color: var(--secondary-label);
+  background: var(--bl-hover);
+}
+
+.bl-start:focus-visible {
+  outline: 2px solid var(--bl-accent);
+  outline-offset: 0;
+}
+
+/* Section */
+
+.bl-sec + .bl-sec {
+  margin-top: 24px;
+}
+
+.bl-sech {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 0 0 8px;
+  padding-bottom: 4px;
+  border-bottom: 0.5px solid var(--bl-line);
+}
+
+.bl-sech h3 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--secondary-label);
+}
+
+.bl-sec-n {
+  font-weight: 400;
+  color: var(--tertiary-label);
+  margin-left: 4px;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Row: the one list item */
+
+.bl-list {
+  display: grid;
+  gap: 2px;
+}
+
+.bl-row {
+  position: relative;
+  border-radius: 7px;
+  padding: 6px 8px;
+  margin: 0 -8px;
+}
+
+.bl-row:hover,
+.bl-row:focus-within {
+  background: var(--bl-hover);
+}
+
+.bl-nav-row {
+  all: unset;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 7px;
+  padding: 6px 8px;
+  margin: 0 -8px;
+}
+
+.bl-nav-row:hover {
+  background: var(--bl-hover);
+}
+
+.bl-nav-row:hover .bl-t {
+  color: var(--bl-accent);
+}
+
+.bl-rtext {
+  flex: 1;
+  min-width: 0;
+  display: grid;
+}
+
+.bl-rtext .bl-t {
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Bar: a row's share of the busiest row in its list */
+
+.bl-bar {
+  display: block;
+  height: 4px;
+  margin-top: 4px;
+  border-radius: 2px;
+  background: var(--bl-fill);
+  overflow: hidden;
+}
+
+.bl-bar > span {
+  display: block;
+  height: 100%;
+  border-radius: 2px;
+  background: var(--bl-blue);
+}
+
+/* Pill: the outline badge */
+
+.bl-pill {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 1px 6px 1px 5px;
+  border-radius: 5px;
+  background: var(--bl-fill);
+  color: var(--secondary-label);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+/* The thread */
+
+.bl-thread {
+  position: relative;
+  margin-left: 4px;
+  padding-left: 18px;
+}
+
+.bl-thread::before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 6px;
+  bottom: 8px;
+  width: 2px;
+  border-radius: 1px;
+  background: var(--bl-line);
+  transform-origin: top;
+  animation: bl-draw 0.45s ease-out;
+}
+
+@keyframes bl-draw {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+.bl-day {
+  all: unset;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--secondary-label);
+  margin: 12px 0 4px;
+  border-radius: 5px;
+}
+
+.bl-thread > div:first-child .bl-day {
+  margin-top: 0;
+}
+
+.bl-day:hover {
+  color: var(--label);
+}
+
+/* The circle: filled when open, a ring when collapsed, with a larger hit area. */
+.bl-day::before {
+  content: '';
+  position: absolute;
+  left: -18px;
+  top: 3px;
+  width: 10px;
+  height: 10px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid var(--bl-blue);
+  background: var(--bl-blue);
+  transition: background 0.15s, transform 0.15s;
+}
+
+.bl-day::after {
+  content: '';
+  position: absolute;
+  left: -24px;
+  top: -3px;
+  width: 22px;
+  height: 22px;
+}
+
+.bl-day.bl-proj::before {
+  border-color: var(--bl-gray);
+  background: var(--bl-gray);
+}
+
+.bl-day.bl-shut::before {
+  background: var(--background);
+}
+
+.bl-day:hover::before {
+  transform: scale(1.2);
+}
+
+.bl-entry {
+  margin-bottom: 4px;
+}
+
+.bl-say {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.bl-say mark {
+  background: var(--bl-mark);
+  color: inherit;
+  border-radius: 3px;
+  padding: 0 2px;
+  font-weight: 600;
+}
+
+.bl-entry .bl-m {
+  margin-top: 2px;
+}
+
+.bl-notes {
+  margin: 4px 0 0;
+  padding: 0;
+  list-style: none;
+  color: var(--secondary-label);
+}
+
+.bl-notes li {
+  position: relative;
+  padding: 1px 0 1px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bl-notes li::before {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 7px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--tertiary-label);
+}
+
+.bl-entry > .bl-link {
+  display: inline-block;
+  margin-top: 4px;
+}
+
+/* Hover actions float over the end of the line, so nothing reflows. */
+
+.bl-acts {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  display: flex;
+  gap: 2px;
+  padding-left: 18px;
+  background: linear-gradient(to right, transparent, var(--bl-hover-solid) 18px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.12s;
+}
+
+.bl-entry:hover .bl-acts,
+.bl-entry:focus-within .bl-acts {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.bl-act {
+  all: unset;
+  width: 22px;
+  height: 20px;
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+  background: var(--background);
+  color: var(--secondary-label);
+  box-shadow: 0 0 0 0.5px var(--bl-line);
+}
+
+.bl-act:hover:not(:disabled) {
+  color: var(--bl-accent);
+}
+
+.bl-act:disabled {
+  color: var(--quaternary-label);
+}
+
+/* Empty state */
+
+.bl-hint {
+  color: var(--secondary-label);
+  margin: 0;
+}
+
+.bl-hint b {
+  color: var(--label);
+  font-weight: 600;
+}
+
+/* Toast */
+
+.bl-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 12px;
+  transform: translateX(-50%);
+  background: var(--label);
+  color: var(--background);
+  padding: 4px 10px;
+  border-radius: 7px;
+  pointer-events: none;
+}
+
+/* Focus */
+
+.bl-back:focus-visible,
+.bl-link:focus-visible,
+.bl-day:focus-visible,
+.bl-row:focus-visible,
+.bl-nav-row:focus-visible,
+.bl-act:focus-visible {
+  outline: 2px solid var(--bl-accent);
+  outline-offset: -2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bl-thread::before {
+    animation: none;
+  }
+  .bl-day::before,
+  .bl-acts {
+    transition: none;
+  }
+}

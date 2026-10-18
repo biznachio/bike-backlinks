@@ -1,0 +1,12 @@
+{
+  "$schema": "../../node_modules/@bike-outliner/extension-kit/schemas/manifest.schema.json",
+  "description": "Shows what links to the row you're on as a dated thread, with notes, where the row links to, Back, and count badges. Read-only: it never writes to your file.",
+  "author": "James Stewart",
+  "url": "https://github.com/biznachio/bike-backlinks",
+  "version": "0.4.4",
+  "api_version": "0.73.0",
+  "permissions": [
+    "clipboardWrite"
+  ],
+  "host_permissions": []
+}
