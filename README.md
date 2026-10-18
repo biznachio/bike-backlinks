@@ -2,7 +2,7 @@
 
 An inspector extension for [Bike 2](https://www.hogbaysoftware.com/bike/) that shows what links to the row you're on, as a dated thread.
 
-Bike's row links go one way. Link a daily note to a project, and the project row has no idea. Backlinks closes that loop: stand on any row and the inspector shows every note that points to it, when, and what was said.
+Bike's row links go one way. Link a daily note to a project, and the project row has no idea. Backlinks closes that loop. Park on any row and the inspector shows every note that points to it, when and what was said.
 
 ![The Backlinks inspector showing a person's thread of linked notes](images/screenshot.png)
 
